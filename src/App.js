@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+// import Btn from './Btn';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <Btn />
+//     );
+// }
 
-export default App;
+// export default App;
+
+
+// function App() {
+//       function thirdExample() {
+//           console.log('third example');
+//       };
+//       return (
+//           <div className="thirdExample">
+//               <button onClick={thirdExample}>
+//                   using a separate function declaration
+//               </button>
+//           </div>
+//       );
+//   };
+//   export default App;
+
+function App() {
+      const fourthExample = () => console.log('fourth example');
+  
+      return (
+          <div className="fourthExample">
+              <button onClick={fourthExample}>
+                  using a separate function expression
+              </button>
+          </div>
+    );
+  };
+  export default App;
